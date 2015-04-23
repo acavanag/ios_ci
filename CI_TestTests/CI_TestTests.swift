@@ -11,26 +11,43 @@ import XCTest
 
 class CI_TestTests: XCTestCase {
     
+    let awesomeObject = AwesomeClass()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        awesomeObject.setupArray()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        awesomeObject.tearDownArray()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func testSortArray() {
+        awesomeObject.sortArray()
+        var previousInt: UInt32 = 0
+        for var i = 0; i < awesomeObject.array.count; i++ {
+            XCTAssertGreaterThanOrEqual(awesomeObject.array[i], previousInt, "Fail")
+            previousInt = UInt32(awesomeObject.array[i])
         }
+    }
+    
+    func testShuffleArray() {
+        awesomeObject.shuffleArray()
+        var unordered = false
+        var previousInt: UInt32 = 0
+        for var i = 0; i < awesomeObject.array.count; i++ {
+            if awesomeObject.array[i] < previousInt {
+                unordered = true
+                break
+            }
+            previousInt = awesomeObject.array[i]
+        }
+        XCTAssertTrue(unordered, "Fail")
+    }
+    
+    func testFooBar() {
+        XCTAssertTrue(awesomeObject.foobar(), "Fail")
     }
     
 }

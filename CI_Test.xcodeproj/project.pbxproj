@@ -13,6 +13,8 @@
 		86643E821AE945AF008A6E42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86643E811AE945AF008A6E42 /* Images.xcassets */; };
 		86643E851AE945AF008A6E42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86643E831AE945AF008A6E42 /* LaunchScreen.xib */; };
 		86643E911AE945AF008A6E42 /* CI_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86643E901AE945AF008A6E42 /* CI_TestTests.swift */; };
+		86643E9B1AE94756008A6E42 /* AwesomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86643E9A1AE94756008A6E42 /* AwesomeClass.swift */; };
+		86643E9C1AE9489F008A6E42 /* AwesomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86643E9A1AE94756008A6E42 /* AwesomeClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		86643E8A1AE945AF008A6E42 /* CI_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CI_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86643E8F1AE945AF008A6E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86643E901AE945AF008A6E42 /* CI_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CI_TestTests.swift; sourceTree = "<group>"; };
+		86643E9A1AE94756008A6E42 /* AwesomeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				86643E811AE945AF008A6E42 /* Images.xcassets */,
 				86643E831AE945AF008A6E42 /* LaunchScreen.xib */,
 				86643E781AE945AF008A6E42 /* Supporting Files */,
+				86643E9A1AE94756008A6E42 /* AwesomeClass.swift */,
 			);
 			path = CI_Test;
 			sourceTree = "<group>";
@@ -214,6 +218,7 @@
 			files = (
 				86643E7D1AE945AF008A6E42 /* ViewController.swift in Sources */,
 				86643E7B1AE945AF008A6E42 /* AppDelegate.swift in Sources */,
+				86643E9B1AE94756008A6E42 /* AwesomeClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86643E9C1AE9489F008A6E42 /* AwesomeClass.swift in Sources */,
 				86643E911AE945AF008A6E42 /* CI_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
